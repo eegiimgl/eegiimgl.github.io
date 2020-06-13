@@ -1,1 +1,4 @@
+name: Enkhbold Ochirbat
+markdown: kramdown
 theme: jekyll-theme-hacker
+permalink: /blog/:year/:month/:day/:title
