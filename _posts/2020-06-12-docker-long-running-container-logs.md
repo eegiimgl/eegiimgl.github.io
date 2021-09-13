@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Docker long-running container logs"
 date: 2020-06-12
 ---
