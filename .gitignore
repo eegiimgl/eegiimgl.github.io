@@ -1,2 +1,7 @@
+# IDE relate
 .idea/
+
+# jekyll related
 _site/
+.jekyll-cache/
+.jekyll-metadata

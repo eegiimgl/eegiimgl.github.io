@@ -1,4 +1,8 @@
-name: Enkhbold Ochirbat
+title: Enkhbold Ochirbat
 markdown: kramdown
-theme: jekyll-theme-hacker
 permalink: /blog/:year/:month/:day/:title
+#theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
