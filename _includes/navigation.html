@@ -1,7 +1,7 @@
-<ul class="nav nav-pills">
+<ul>
     {% for item in site.data.navigation %}
-    <li class="nav-item">
-        <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+    <li>
+        <a href="{{ item.link }}">{{ item.name }}</a>
     </li>
     {% endfor %}
 </ul>
