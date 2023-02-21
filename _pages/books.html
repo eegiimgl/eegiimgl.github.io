@@ -4,8 +4,12 @@ title: Books
 permalink: /books
 ---
 
+<h1>I am reading these books</h1>
 <ul>
+  {% for book in site.books %} 
   <li>
-    {{ page.title }}
+    {{ book.title }}
+    {{ book.author }}
   </li>
+  {% endfor %}
 </ul>
