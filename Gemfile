@@ -6,7 +6,10 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem "jekyll"
 gem "webrick"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
+gem "minima"
 
-# gem "minima"
+group :jekyll_plugins do
+  gem "jekyll-sitemap"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+end

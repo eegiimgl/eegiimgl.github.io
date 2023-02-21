@@ -1,8 +1,12 @@
-- name: About
+- name: Home
+  link: /
+- name: Regarding Me
   link: /about
-- name: Resume
+- name: Career Story
   link: /resume
-- name: Blog
+- name: Online Journal
   link: /blog
-- name: Books
+- name: Good Habit
   link: /books
+- name: Repository Collection
+  link: /portfolios

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+author: enkhbold
 title: "Docker long-running container logs"
 date: 2020-06-12
 ---

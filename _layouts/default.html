@@ -2,13 +2,16 @@
 <html lang="{{ page.lang | default: site.lang | default: 'eng' }}">
 {% include head.html %}
 <body>
-{% include svg.html %}
-{% include header.html %}
 
-<div class="container">
-    {{ content }}
-</div>
-{% include footer.html %}
+<header>
+  {% include header.html %}
+</header>
+<main>
+  {{ content }}
+</main>
+<footer>
+  {% include footer.html %}
+</footer>
 
 </body>
 </html>

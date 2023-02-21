@@ -1,0 +1,45 @@
+body {
+  font-family: monospace;
+  background-color: #202124;
+  color: #f8f9fa;
+  font-size: 16px;
+}
+
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+header, main, footer {
+  //max-width: 640px;
+}
+
+header {
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+  }
+
+  border-bottom: #828282 dashed;
+  padding-bottom: 10px;
+}
+
+footer {
+  padding-top: 10px;
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    justify-content: flex-start;
+    column-gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  border-top: #828282 dashed;
+}
+
+.current {
+  color: green;
+}

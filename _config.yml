@@ -1,8 +1,10 @@
 title: Enkhbold Ochirbat
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-#theme: minima
+theme: minima
+include: ['_pages']
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
