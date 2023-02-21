@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "How to make github page"
 date: 2020-06-12
 ---

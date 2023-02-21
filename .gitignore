@@ -1,7 +1,14 @@
-# IDE relate
+# IDE related
 .idea/
 
 # jekyll related
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+# OS related
+.DS_Store
+
+# Ruby related
+.bundle/
+vendor/

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Learning notes from system design"
 date: 2021-09-12
 ---

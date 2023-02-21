@@ -1,12 +1,9 @@
-<footer>
-    <span>&copy2022</span>
-    <ul>
-        {% for item in site.data.social %}
-        <li>
-            <a href="{{ item.link }}">
-                {{ item.name }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
-</footer>
+<ul>
+  {% for item in site.data.social %}
+  <li>
+    <a href="{{ item.link }}" target="_blank">
+      {{ item.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

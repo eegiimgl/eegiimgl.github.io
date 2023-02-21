@@ -3,12 +3,9 @@ layout: default
 title: Home
 ---
 <div class="blurb">
-    <h1>Hi there, I'm Enkhbold Ochirbat.</h1>
-    <p>
-        I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more
-        about
-        my life...</a>
-    </p>
-    <br/>
-    My Blog posts are here: <a href="/blog">Blog</a>
+  <h1>Hi there, I'm Enkhbold Ochirbat.</h1>
+  {% for page in site.pages %}
+  {{ page.title }} / {{page.name}} / {{page.id}} / {{page.path}}
+  <br/>
+  {% endfor %}
 </div><!-- /.blurb -->
