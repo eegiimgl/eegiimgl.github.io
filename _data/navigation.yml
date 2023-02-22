@@ -1,4 +1,4 @@
-- name: Home
+- name: Terminal
   link: /
 - name: Regarding Me
   link: /about
@@ -6,7 +6,7 @@
   link: /resume
 - name: Online Journal
   link: /blog
-- name: Good Habit
+- name: Habit
   link: /books
-- name: Repository Collection
+- name: Repository
   link: /portfolios

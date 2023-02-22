@@ -2,10 +2,16 @@
 layout: default
 title: Home
 ---
-<div class="blurb">
-  <h1>Hi there, I'm Enkhbold Ochirbat.</h1>
-  {% for page in site.pages %}
-  {{ page.title }} / {{page.name}} / {{page.id}} / {{page.path}}
-  <br/>
-  {% endfor %}
-</div><!-- /.blurb -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+<script>
+  $('body').terminal({
+      hello: function(what) {
+          this.echo('Hello, ' + what +
+                    '. Wellcome to this terminal.');
+      }
+  }, {
+      greetings: 'If you don\' know commands that I understand, just type help'
+  });
+</script>
