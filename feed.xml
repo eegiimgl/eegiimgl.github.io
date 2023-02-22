@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-02-22T06:02:36+00:00</updated><id>/feed.xml</id><title type="html">Enkhbold Ochirbat</title><entry><title type="html">Learning notes from system design</title><link href="/blog/2021/09/12/system-design-notes" rel="alternate" type="text/html" title="Learning notes from system design" /><published>2021-09-12T00:00:00+00:00</published><updated>2021-09-12T00:00:00+00:00</updated><id>/blog/2021/09/12/system-design-notes</id><content type="html" xml:base="/blog/2021/09/12/system-design-notes"><![CDATA[<h1 id="todo">TODO</h1>
+<ul>
+  <li>Research good public API</li>
+  <li>Cassandra database, try to use it</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[TODO Research good public API Cassandra database, try to use it]]></summary></entry><entry><title type="html">Docker long-running container logs</title><link href="/blog/2020/06/12/docker-long-running-container-logs" rel="alternate" type="text/html" title="Docker long-running container logs" /><published>2020-06-12T00:00:00+00:00</published><updated>2020-06-12T00:00:00+00:00</updated><id>/blog/2020/06/12/docker-long-running-container-logs</id><content type="html" xml:base="/blog/2020/06/12/docker-long-running-container-logs"><![CDATA[<p>Well finally I decided put some blog post how I accomplish some things over there.</p>
+
+<p>Here is example commands how we can investigate dangling docker volumes.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume <span class="nb">ls</span> |grep <span class="nt">-c</span> rancher-secrets
+
+docker volume <span class="nb">ls</span> <span class="nt">-q</span> <span class="nt">--filter</span> “dangling<span class="o">=</span><span class="nb">true</span>” | <span class="nb">wc</span> <span class="nt">-l</span>
+
+docker volume prune
+</code></pre></div></div>]]></content><author><name>enkhbold</name></author><summary type="html"><![CDATA[Well finally I decided put some blog post how I accomplish some things over there.]]></summary></entry><entry><title type="html">How to make github page</title><link href="/blog/2020/06/12/howto-make-github-page" rel="alternate" type="text/html" title="How to make github page" /><published>2020-06-12T00:00:00+00:00</published><updated>2020-06-12T00:00:00+00:00</updated><id>/blog/2020/06/12/howto-make-github-page</id><content type="html" xml:base="/blog/2020/06/12/howto-make-github-page"><![CDATA[<p>Here is the special resource links to learn how to make jekyll website hosted in github supported by github pages.</p>
+
+<ul>
+  <li><a href="https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">Setting up a Github Pages site with Jekyll</a></li>
+  <li><a href="https://jekyllrb.com/docs/github-pages/">GitHub Pages instruction by Jekyll</a></li>
+  <li><a href="http://jmcglone.com/guides/github-pages/">Jonathan Mcglone blog post of brief instruction</a></li>
+  <li><a href="https://jekyllrb.com/docs/structure/">Jekyll Directory Structure</a></li>
+</ul>
+
+<h2 id="learning-materials">Learning materials</h2>
+<ul>
+  <li><a href="https://www.educative.io/courses/sass-for-css">What is sass for css</a></li>
+  <li><a href="https://shopify.github.io/liquid/">Liquid Templating Language</a></li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Here is the special resource links to learn how to make jekyll website hosted in github supported by github pages.]]></summary></entry></feed>
