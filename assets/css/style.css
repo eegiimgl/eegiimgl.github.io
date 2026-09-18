@@ -168,3 +168,51 @@ code {
 .fun-coming-soon p {
   color: #6272a0;
 }
+
+/* Resume */
+.resume-block {
+  margin-top: 24px;
+}
+
+.resume-block h2 {
+  color: #bd93f9;
+  font-size: 18px;
+}
+
+.resume-head {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.resume-head h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #8be9fd;
+}
+
+.resume-dates {
+  color: #6272a0;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+
+.skills-group h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6272a0;
+  margin: 16px 0 8px;
+}
+
+.skills-group:first-of-type h3 {
+  margin-top: 8px;
+}
+
+.skills-group .skills {
+  margin: 0;
+}
