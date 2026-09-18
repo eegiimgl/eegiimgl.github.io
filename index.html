@@ -1,17 +1,153 @@
----
-layout: default
-title: Home
----
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#282a36">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2/css/jquery.terminal.min.css"/>
+  <title>Home | Enkhbold Ochirbat</title>
+  <meta name="description" content="Enkhbold (Eegii) Ochirbat — software development engineer. Terminal-inspired personal homepage.">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="/" class="current" aria-current="page" title="Home">~</a>
+    <span aria-hidden="true">❯</span>
+    <a href="/about" title="Regarding Me">whoami</a>
+    <span aria-hidden="true">❯</span>
+    <a href="/resume" title="Career Story">career.log</a>
+    <span aria-hidden="true">❯</span>
+    <a href="/portfolios" title="Repository">repos</a>
+    <span aria-hidden="true">❯</span>
+    <a href="/weekend-hacks" title="Weekend Hacks">weekend-hacks</a>
+  </nav>
+</header>
+<main>
+  <div id="term" class="term" role="application" aria-label="Interactive site terminal"></div>
+  <noscript>
+    <h1>Hi there, I'm Enkhbold (Eegii) Ochirbat.</h1>
+    <p>
+      I'm a software development engineer &mdash; friends and colleagues know me as Eegii.
+      This is my terminal-inspired home on the web.
+    </p>
+    <p>
+      The interactive terminal needs JavaScript. You can still browse the site:
+      <a href="/about">whoami</a> &middot;
+      <a href="/resume">career.log</a> &middot;
+      <a href="/portfolios">repos</a> &middot;
+      <a href="/weekend-hacks">weekend-hacks</a>
+    </p>
+  </noscript>
+</main>
+<footer>
+  <ul>
+    <li>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin</a>
+    </li>
+    <li aria-hidden="true">❯</li>
+    <li>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener">twitter</a>
+    </li>
+  </ul>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2/js/jquery.terminal.min.js"></script>
 <script>
-  $('body').terminal({
-      hello: function(what) {
-          this.echo('Hello, ' + what +
-                    '. Wellcome to this terminal.');
+  jQuery(function ($) {
+    var LINKS = {
+      about: '/about',
+      resume: '/resume',
+      repos: '/portfolios',
+      hacks: '/weekend-hacks'
+    };
+
+    function link(label, url) {
+      return '[[!;;;;' + url + ']' + label + ']';
+    }
+
+    $('#term').terminal(
+      {
+        help: function () {
+          this.echo(
+            'Available commands:\n' +
+              '  help               show this message\n' +
+              '  whoami             short intro\n' +
+              '  about              open the about page (whoami)\n' +
+              '  resume             open the resume page (career.log)\n' +
+              '  repos              open the repos page\n' +
+              '  weekend-hacks      open the weekend hacks page\n' +
+              '  contact            show where to find me\n' +
+              '  hello <name>       say hello\n' +
+              '  clear              clear the terminal'
+          );
+        },
+        whoami: function () {
+          this.echo(
+            'Enkhbold (Eegii) Ochirbat -- software development engineer.'
+          );
+        },
+        about: function () {
+          this.echo('Opening ' + link('whoami', LINKS.about));
+        },
+        resume: function () {
+          this.echo('Opening ' + link('career.log', LINKS.resume));
+        },
+        repos: function () {
+          this.echo('Opening ' + link('repos', LINKS.repos));
+        },
+        portfolios: function () {
+          this.echo('Opening ' + link('repos', LINKS.repos));
+        },
+        'weekend-hacks': function () {
+          this.echo('Opening ' + link('weekend-hacks', LINKS.hacks));
+        },
+        fun: function () {
+          this.echo('Opening ' + link('weekend-hacks', LINKS.hacks));
+        },
+        contact: function () {
+          this.echo(
+            'Find me: linkedin: https://www.linkedin.com | twitter: https://www.twitter.com'
+          );
+        },
+        hello: function (what) {
+          this.echo(
+            'Hello, ' + (what || 'stranger') + '. Welcome to this terminal.'
+          );
+        }
+      },
+      {
+        greetings:
+          'Hi there, I\'m Enkhbold (Eegii) Ochirbat.\n' +
+          'I\'m a software development engineer -- friends and colleagues know me as Eegii.\n' +
+          'This is my terminal-inspired home on the web.\n' +
+          '\n' +
+          'Type [[b;#ff79c6;]help] to see what I understand ' +
+          '(try [[b;#f8f8f2;]whoami], [[b;#f8f8f2;]fun] or [[b;#f8f8f2;]contact]).',
+        prompt: 'visitor@eegii:~$ ',
+        completion: [
+          'help',
+          'whoami',
+          'about',
+          'resume',
+          'repos',
+          'portfolios',
+          'weekend-hacks',
+          'fun',
+          'contact',
+          'hello',
+          'clear'
+        ],
+        checkArity: false
       }
-  }, {
-      greetings: 'If you don\' know commands that I understand, just type help'
+    );
   });
 </script>
+</body>
+</html>

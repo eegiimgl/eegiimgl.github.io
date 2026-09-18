@@ -1,6 +1,0 @@
-#!/bin/sh
-
-rm -rf .jekyll-cache
-rm -rf _site
-
-jekyll clean
