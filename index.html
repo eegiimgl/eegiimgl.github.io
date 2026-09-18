@@ -26,7 +26,7 @@
     <span aria-hidden="true">❯</span>
     <a href="/resume" title="Career Story">career.log</a>
     <span aria-hidden="true">❯</span>
-    <a href="/portfolios" title="Repository">repos</a>
+    <a href="/books" title="Books I love">reading.log</a>
     <span aria-hidden="true">❯</span>
     <a href="/weekend-hacks" title="Weekend Hacks">weekend-hacks</a>
   </nav>
@@ -43,7 +43,7 @@
       The interactive terminal needs JavaScript. You can still browse the site:
       <a href="/about">whoami</a> &middot;
       <a href="/resume">career.log</a> &middot;
-      <a href="/portfolios">repos</a> &middot;
+      <a href="/books">reading.log</a> &middot;
       <a href="/weekend-hacks">weekend-hacks</a>
     </p>
   </noscript>
@@ -67,7 +67,7 @@
     var LINKS = {
       about: '/about',
       resume: '/resume',
-      repos: '/portfolios',
+      books: '/books',
       hacks: '/weekend-hacks'
     };
 
@@ -84,7 +84,7 @@
               '  whoami             short intro\n' +
               '  about              open the about page (whoami)\n' +
               '  resume             open the resume page (career.log)\n' +
-              '  repos              open the repos page\n' +
+              '  books              open the books page (reading.log)\n' +
               '  weekend-hacks      open the weekend hacks page\n' +
               '  contact            show where to find me\n' +
               '  hello <name>       say hello\n' +
@@ -102,11 +102,14 @@
         resume: function () {
           this.echo('Opening ' + link('career.log', LINKS.resume));
         },
-        repos: function () {
-          this.echo('Opening ' + link('repos', LINKS.repos));
+        books: function () {
+          this.echo('Opening ' + link('reading.log', LINKS.books));
         },
-        portfolios: function () {
-          this.echo('Opening ' + link('repos', LINKS.repos));
+        reading: function () {
+          this.echo('Opening ' + link('reading.log', LINKS.books));
+        },
+        repos: function () {
+          this.echo('Opening ' + link('reading.log', LINKS.books));
         },
         'weekend-hacks': function () {
           this.echo('Opening ' + link('weekend-hacks', LINKS.hacks));
@@ -139,8 +142,9 @@
           'whoami',
           'about',
           'resume',
+          'books',
+          'reading',
           'repos',
-          'portfolios',
           'weekend-hacks',
           'fun',
           'contact',
