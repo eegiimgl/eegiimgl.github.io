@@ -150,7 +150,7 @@ code {
   border: 1px solid #44475a;
   border-radius: 8px;
   background: #1e1f29;
-  padding: 16px 18px;
+  padding: 12px 14px;
   transition: border-color 0.2s ease-out, transform 0.2s ease-out;
 }
 
@@ -160,32 +160,66 @@ code {
 }
 
 .fun-card h2 {
-  font-size: 17px;
-  margin: 0 0 8px;
+  font-size: 16px;
+  margin: 0 0 6px;
   color: #8be9fd;
 }
 
+.fun-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.fun-card-head h2 {
+  margin: 0;
+}
+
+.fun-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.fun-card-cover {
+  width: 48px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
 .fun-card p {
-  margin: 0 0 8px;
-  font-size: 14px;
-  line-height: 1.55;
+  margin: 0 0 6px;
+  font-size: 13px;
+  line-height: 1.45;
   color: #c7cddb;
 }
 
 .fun-card .tags {
   display: flex;
   flex-flow: row wrap;
-  gap: 8px;
-  margin: 12px 0;
+  gap: 6px;
+  margin: 8px 0;
 }
 
 .fun-card code {
-  font-size: 13px;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.fun-card code.tag-lang {
+  background: transparent;
+  border: 1px solid #f1fa8c;
+  color: #f1fa8c;
 }
 
 .fun-card .more {
   color: #50fa7b;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .fun-coming-soon {
@@ -195,6 +229,24 @@ code {
 .fun-coming-soon h2,
 .fun-coming-soon p {
   color: #6272a0;
+}
+
+/* Weekend Hacks motto */
+.motto {
+  margin: 20px 0 0;
+  padding: 4px 0 4px 16px;
+  border-left: 2px solid #ff79c6;
+}
+
+.motto p {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.motto cite {
+  color: #6272a0;
+  font-size: 13px;
+  font-style: normal;
 }
 
 /* Resume */

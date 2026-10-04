@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css?v=4">
-  <title>Weekend Hacks | Enkhbold Ochirbat</title>
-  <meta name="description" content="Weekend Hacks — small builds and experiments by Enkhbold (Eegii) Ochirbat.">
+  <title>Projects &amp; Experiments | Enkhbold Ochirbat</title>
+  <meta name="description" content="Projects & Experiments — small builds and side projects by Enkhbold (Eegii) Ochirbat.">
 </head>
 <body>
 <header>
@@ -32,40 +32,69 @@
     <span aria-hidden="true">❯</span>
     <a href="/resume" title="Career Story">career.log</a>
     <span aria-hidden="true">❯</span>
-    <a href="/books" title="Books I love">reading.log</a>
+    <a href="/books" title="Books for Growth">reading.log</a>
     <span aria-hidden="true">❯</span>
     <a href="/weekend-hacks" class="current" aria-current="page" title="Weekend Hacks">weekend-hacks</a>
   </nav>
 </header>
 <main>
-  <h1>Weekend Hacks</h1>
-  <p>Small builds and experiments I tinker with for fun.</p>
+  <h1>Projects &amp; Experiments</h1>
+  <p>
+    In my free time, I build tools to solve my own problems and then explore
+    how they can help others. These are mostly fun, experimental projects, so
+    my focus is on the solution design rather than building a flawless
+    product. I strongly believe the most powerful solutions are simple ones.
+    If you have feedback, want to collaborate, or have a problem you need
+    help solving, feel free to reach out!
+  </p>
   <ul class="fun-grid">
     <!-- Replace these placeholders with your own projects:
          title, one-liner, tech tags, and link. -->
     <li class="fun-card">
-      <h2>WordWise</h2>
+      <div class="fun-card-head">
+        <img class="fun-card-icon" src="/assets/images/projects/wordwise.png" alt="WordWise app icon" width="36" height="36">
+        <h2>WordWise</h2>
+      </div>
       <p>An iPhone app for ESL vocabulary learning &mdash; AI-powered explanations, flashcards, and offline word banks.</p>
       <p class="tags"><code>expo</code> <code>react-native</code> <code>supabase</code> <code>gemini</code></p>
-      <a class="more" href="https://wordwise.eegii.dev" target="_blank" rel="noopener">Check it out</a>
+      <a class="more" href="https://wordwise.eegii.dev" target="_blank" rel="noopener">Check it out</a> &middot; <a class="more" href="https://apps.apple.com/us/app/word-wise-vocabulary/id6800174080" target="_blank" rel="noopener">App Store</a>
     </li>
     <li class="fun-card">
-      <h2>Web Charts</h2>
-      <p>A visual showcase of chart use-cases &mdash; interactive data stories with charts and data tables.</p>
-      <p class="tags"><code>vite</code> <code>typescript</code> <code>apexcharts</code> <code>python</code></p>
-      <p><a class="more" href="https://web-charts.eegii.dev" target="_blank" rel="noopener">Live demo</a> &middot; <a class="more" href="https://github.com/eegiimgl/web-charts" target="_blank" rel="noopener">Source</a></p>
+      <div class="fun-card-head">
+        <img class="fun-card-icon" src="/assets/images/projects/web-charts.svg" alt="Web Charts app icon" width="36" height="36">
+        <h2>Web Charts</h2>
+      </div>
+      <p>A visual showcase of meaningful chart use-cases &mdash; interactive data stories with charts and data tables.</p>
+      <p class="tags"><code class="tag-lang">mongolian</code> <code>vite</code> <code>typescript</code> <code>apexcharts</code> <code>python</code></p>
+      <p><a class="more" href="https://web-charts.eegii.dev" target="_blank" rel="noopener">Live demo</a></p>
     </li>
     <li class="fun-card">
-      <h2>Focus Reader</h2>
+      <div class="fun-card-head">
+        <img class="fun-card-icon" src="/assets/images/projects/focus-reader.svg" alt="Focus Reader app icon" width="36" height="36">
+        <h2>Focus Reader</h2>
+      </div>
       <p>Paste a URL &rarr; a clean Kindle-like reading page. Highlight any text for AI explanations.</p>
-      <p class="tags"><code>nextjs</code> <code>typescript</code> <code>tailwind</code> <code>gemini</code></p>
-      <p><a class="more" href="https://focus-reader.eegii.dev" target="_blank" rel="noopener">Live demo</a> &middot; <a class="more" href="https://github.com/eegiimgl/focus-reader" target="_blank" rel="noopener">Source</a></p>
+      <p class="tags"><code>nextjs</code> <code>typescript</code> <code>tailwind</code> <code>gemini</code> <code>jina</code></p>
+      <p><a class="more" href="https://focus-reader.eegii.dev" target="_blank" rel="noopener">Live demo</a></p>
+    </li>
+    <li class="fun-card">
+      <div class="fun-card-head">
+        <img class="fun-card-icon" src="/assets/images/projects/shiidel-cargo.png" alt="Shiidel Cargo app icon" width="36" height="36">
+        <h2>Shiidel Cargo</h2>
+      </div>
+      <p>A cargo delivery management system &mdash; customer portal with order tracking, plus an admin dashboard for users, products, and orders.</p>
+      <p class="tags"><code class="tag-lang">mongolian</code> <code>nextjs</code> <code>typescript</code> <code>go</code> <code>postgresql</code></p>
+      <p><a class="more" href="https://shiidel-cargo.mn/" target="_blank" rel="noopener">Live demo</a></p>
     </li>
     <li class="fun-card fun-coming-soon">
       <h2>Coming soon</h2>
       <p>More weekend experiments are on the way.</p>
     </li>
   </ul>
+  <blockquote class="motto">
+    <p>&ldquo;First do it, then do it right, then do it better.&rdquo;</p>
+    <cite>&mdash; <a href="https://addyosmani.com/" target="_blank" rel="noopener">Addy Osmani</a></cite>
+  </blockquote>
 </main>
 <footer>
   <ul>
