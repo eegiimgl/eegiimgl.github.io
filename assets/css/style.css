@@ -150,17 +150,26 @@ code {
   border: 1px solid #44475a;
   border-radius: 8px;
   background: #1e1f29;
-  padding: 16px;
+  padding: 16px 18px;
+  transition: border-color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.fun-card:hover {
+  border-color: #bd93f9;
+  transform: translateY(-2px);
 }
 
 .fun-card h2 {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0 0 8px;
   color: #8be9fd;
 }
 
 .fun-card p {
   margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #c7cddb;
 }
 
 .fun-card .tags {
@@ -170,8 +179,13 @@ code {
   margin: 12px 0;
 }
 
+.fun-card code {
+  font-size: 13px;
+}
+
 .fun-card .more {
   color: #50fa7b;
+  font-size: 14px;
 }
 
 .fun-coming-soon {
